@@ -147,6 +147,35 @@ h2 {
     }
 
 
+/* ABOUT US SECTION */
+
+    /* versione tablet */
+    @media screen and (min-width:768px) {
+        #aboutus .container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .left.card {
+            width: 56%;
+        }
+
+        .right.card {
+            width: 40%;
+        }
+    }
+
+    /* versione tablet */
+    @media screen and (min-width:1024px) {
+        .left.card {
+            width: 66%;
+        }
+
+        .right.card {
+            width: 30%;
+        }
+    }
+
 /* VERSIONE DESKTOP GENERALI */
 @media screen and (min-width:1024px) {
     .container {
@@ -190,3 +219,4 @@ h2 {
 .testimonial {
     min-height: 100px;
 }
+

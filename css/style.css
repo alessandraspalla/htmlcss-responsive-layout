@@ -12,10 +12,15 @@
 }
 
 
-/* header */
+/* HEADER */
 header {
+    width: 100%;
     height: 60px;
     background-color: #0084fd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 
 header .container {
@@ -31,10 +36,6 @@ header .container {
 
     /* versione desktop */
     @media screen and (min-width:1024px) {
-        header .container {
-            width: 80%;
-        }
-
         #tabletnav {
             display: block;
         }
@@ -44,6 +45,72 @@ header .container {
         }
     }
 
+
+/* MAIN GENERAL STYLE */
+section {
+    padding-top: 40px;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+/* DEVELOPER SECTION */
+#devsection .container {
+    margin-top: 60px;
+}
+
+#devsection .card {
+    background-color: #b5ddff;
+    border-radius: 20px;
+}
+
+
+    /* versione tablet */
+    @media screen and (min-width:768px) {
+        #devsection .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        #devsection .card {
+            width: calc((100% / 3) - 20px);
+        }
+        
+        #devsection .card.big {
+            width: calc((100% / 3 * 2) - 10px);
+        }
+    }
+
+
+/* PLANNING SECTION */
+
+
+    /* versione desktop */
+    @media screen and (min-width:1024px) {
+        #planningsection .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        #planningsection .card {
+            width: 40%;
+        }
+    }
+
+
+
+
+/* VERSIONE DESKTOP GENERALI */
+@media screen and (min-width:1024px) {
+    .container {
+        width: 80%;
+    }
+
+}
 
 
 
@@ -69,4 +136,10 @@ header .container {
     width: 100px;
     height: 30px;
     background-color: red;
+}
+
+.card {
+    min-height: 250px;
+    background-color: blueviolet;
+    border: 1px solid white;
 }

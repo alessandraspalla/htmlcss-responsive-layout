@@ -153,11 +153,11 @@ h2 {
     @media screen and (min-width:768px) {
         #aboutus .container {
             display: flex;
-            justify-content: space-between;
+            justify-content: space-around;
         }
 
         .left.card {
-            width: 56%;
+            width: 50%;
         }
 
         .right.card {
@@ -168,11 +168,31 @@ h2 {
     /* versione tablet */
     @media screen and (min-width:1024px) {
         .left.card {
-            width: 66%;
+            width: 60%;
         }
 
         .right.card {
             width: 30%;
+        }
+    }
+
+
+/* GET STARTED SECTION */
+#getstart {
+    text-align: center;
+}
+
+    /* versione tablet */
+    @media screen and (min-width:768px) {
+        #getstart .container {
+            width: 80%;
+        }
+    }
+
+    /* versione desktop */
+    @media screen and (min-width:1024px) {
+        #getstart .container {
+            width: 45%;
         }
     }
 

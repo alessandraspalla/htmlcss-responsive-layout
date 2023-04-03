@@ -102,6 +102,17 @@ section {
     }
 
 
+/* TESTIMONIALS SECTION */
+.title, .text {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.testimonial {
+    background-color: #9792e4;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
 
 
 /* VERSIONE DESKTOP GENERALI */
@@ -142,4 +153,8 @@ section {
     min-height: 250px;
     background-color: blueviolet;
     border: 1px solid white;
+}
+
+.testimonial {
+    min-height: 100px;
 }

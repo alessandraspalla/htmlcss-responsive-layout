@@ -115,10 +115,42 @@ section {
 }
 
 
+
+/* BENEFICT SECTION */
+h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+    /* versione tablet */
+    @media screen and (min-width:768px) {
+        #benefitsec .row{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0 20px;
+        }
+
+        #benefitsec .card {
+            width: calc(50% - 10px);
+        }
+    }
+
+    /* versione tablet */
+    @media screen and (min-width:1024px) {
+        #benefitsec .row{
+            justify-content:space-between ;
+        }
+
+        #benefitsec .card {
+            width: calc((100% / 3) - 15px);
+        }
+    }
+
+
 /* VERSIONE DESKTOP GENERALI */
 @media screen and (min-width:1024px) {
     .container {
-        width: 80%;
+        width: 70%;
     }
 
 }

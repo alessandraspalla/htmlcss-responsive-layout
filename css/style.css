@@ -59,12 +59,6 @@ header .container {
     width: 55%;
 }
 
-.flex-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
     /* versione desktop */
     @media screen and (min-width:1024px) {
         #tabletnav {
@@ -73,6 +67,12 @@ header .container {
 
         #mobilenav {
             display: none;
+        }
+
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
         }
     }
 
@@ -92,6 +92,11 @@ header .container {
 .card.big .button {
     background-color: #0084fd;
     padding: 6px 40px;
+}
+
+.button.violet {
+    background-color:#9792e4;
+    color: #000;
 }
 
 
@@ -118,6 +123,11 @@ h3 {
     margin-bottom: 20px;
 }
 
+h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
 /* DEVELOPER SECTION */
 #devsection .container {
     margin-top: 60px;
@@ -129,7 +139,11 @@ h3 {
     border-radius: 20px;
 }
 
-.card.big {
+#devsection .card.big {
+    padding-bottom: 0;
+}
+
+.card.big .text {
     text-align: left;
 }
 
@@ -144,7 +158,10 @@ h3 {
 
 .card .image {
     margin-top: 25px;
-    margin-bottom: -35px;
+}
+
+.image img {
+    display: block;
 }
 
 .icon {
@@ -168,11 +185,47 @@ h3 {
         #devsection .card.big {
             width: calc((100% / 3 * 2) - 10px);
         }
+
+        .icon {
+            font-size: 4rem;
+        }
+
+        .image {
+            width: 50%;
+        }
+    }
+
+    /* versione desktop */
+    @media screen and (min-width:1024px) {
+        .card.big {
+            display: flex;
+        }
+
+        .card.big .text {
+            width: 50%;
+        }
+
+        .card .image {
+            align-self: flex-end;
+        }
     }
 
 
 /* PLANNING SECTION */
 
+#planningsection h2, #planningsection p {
+    color: #fff;
+}
+
+.white {
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 20px;
+}
+
+#planningsection .white p, .white h3{
+    color: #000;
+}
 
     /* versione desktop */
     @media screen and (min-width:1024px) {
@@ -312,10 +365,30 @@ footer p {
     }
 
 
+/* VERSIONE TABLET GENERALI */
+@media screen and (min-width:768px) {
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+}
+
+
 /* VERSIONE DESKTOP GENERALI */
 @media screen and (min-width:1024px) {
     .container {
         width: 70%;
+    }
+
+    h3 {
+        font-size: 1.15rem;
+    }
+
+    p {
+        font-size: 0.75rem;
     }
 
 }
@@ -326,8 +399,6 @@ footer p {
 
 .card {
     min-height: 250px;
-    background-color: blueviolet;
-    border: 1px solid white;
 }
 
 .testimonial {

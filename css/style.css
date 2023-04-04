@@ -79,6 +79,7 @@ header .container {
 
 /* BUTTON STYLE */
 .button {
+    font-size: 0.8rem;
     padding: 5px 10px;
     border: none;
     border-radius: 15px;
@@ -132,7 +133,7 @@ h3 {
 
 h2 {
     font-size: 2rem;
-    margin: 20px 0;
+    margin-bottom: 20px;
 }
 
 /* DEVELOPER SECTION */
@@ -279,7 +280,7 @@ h2, #planningsection p {
     padding: 20px;
 }
 
-#title-violet {
+.title-violet {
     color: #9792e4;
 }
 
@@ -315,7 +316,7 @@ h2, #planningsection p {
 
 /* BENEFICT SECTION */
 h1 {
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 
 h1, .row h3 {
@@ -352,6 +353,17 @@ h1, .row h3 {
 
 
 /* ABOUT US SECTION */
+.circle{
+    position: relative;
+}
+
+.special {
+    font-size: 3.2rem;
+    color: #9792e4;
+    position: absolute;
+    top: 0;
+    left: 110px;
+}
 
     /* versione tablet */
     @media screen and (min-width:768px) {
@@ -360,12 +372,12 @@ h1, .row h3 {
             justify-content: space-around;
         }
 
-        .left.card {
+        .left-card {
             width: 50%;
         }
 
-        .right.card {
-            width: 40%;
+        .right-card {
+            width: 22%;
         }
     }
 
@@ -376,7 +388,7 @@ h1, .row h3 {
         }
 
         .right.card {
-            width: 30%;
+            width: 20%;
         }
     }
 

@@ -107,6 +107,14 @@ header .container {
     padding: 5px 30px;
 }
 
+#getstart .button {
+    display: inline-block;
+    background-color: #fff;
+    color: #9792e4;
+    padding: 15px 50px;
+    margin: 30px 0;
+    border-radius: 25px;
+}
 
 /* MAIN GENERAL STYLE */
 section {
@@ -300,6 +308,11 @@ h2, #planningsection p {
     color: #fff;
 }
 
+.description span, #test {
+    display: block;
+    margin-bottom: 15px;
+}
+
     /* versione tablet */
     @media screen and (min-width:768px) {
         .testimonial {
@@ -394,14 +407,41 @@ h1, .row h3 {
 
 
 /* GET STARTED SECTION */
-#getstart {
+.container.description  {
     text-align: center;
+}
+
+#itsfree {
+    display: inline-block;
+    font-size: 3rem;
+    color: #fdc15f;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+.fa-circle {
+    line-height: 1rem;
+    vertical-align: middle;
+    font-size: .3rem;
+}
+
+#privacy {
+    text-decoration: underline;
 }
 
     /* versione tablet */
     @media screen and (min-width:768px) {
         #getstart .container {
-            width: 80%;
+            width: 70%;
+        }
+
+        #itsfree {
+            font-size: 4rem;
+        }
+
+        #p-getstart{
+            width: 60%;
+            margin: 0 auto;
         }
     }
 
@@ -445,7 +485,7 @@ footer p {
 /* VERSIONE TABLET GENERALI */
 @media screen and (min-width:768px) {
     h2 {
-        font-size: 2.8rem;
+        font-size: 2.5rem;
     }
 
     h3 {
@@ -477,12 +517,3 @@ footer p {
     }
 
 }
-
-
-
-/*  DEBUG */
-
-.card {
-    border: #000 1px solid;
-}
-

@@ -96,7 +96,14 @@ header .container {
 
 .button.violet {
     background-color:#9792e4;
+}
+
+.card.white .button {
     color: #000;
+}
+
+.text.white .button {
+    padding: 5px 30px;
 }
 
 
@@ -125,7 +132,7 @@ h3 {
 
 h2 {
     font-size: 2rem;
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 /* DEVELOPER SECTION */
@@ -143,7 +150,7 @@ h2 {
     padding-bottom: 0;
 }
 
-.card.big .text {
+.text {
     text-align: left;
 }
 
@@ -151,7 +158,7 @@ h2 {
     color: #0084fd;
 }
 
-.card p {
+.card p, .text p {
     color: #333333;
     margin-bottom: 30px;
 }
@@ -213,16 +220,12 @@ h2 {
 
 /* PLANNING SECTION */
 
-#planningsection h2, #planningsection p {
+h2, #planningsection p { 
     color: #fff;
-    text-align: left;
-}
-
-#planningsection .card.white p{
-    text-align: center;
 }
 
 .white {
+    margin-bottom: 20px;
     background-color: #fff;
     border-radius: 30px;
     padding: 25px;
@@ -235,7 +238,7 @@ h2 {
 
     /* versione tablet */
     @media screen and (min-width:768px) {
-        .image {
+        #planningsection .image {
             width: 100%;
         }
     }
@@ -268,23 +271,59 @@ h2 {
 
 
 /* TESTIMONIALS SECTION */
-.title, .text {
-    text-align: center;
-    margin-bottom: 30px;
-}
 
 .testimonial {
     background-color: #9792e4;
     border-radius: 15px;
     margin-bottom: 20px;
+    padding: 20px;
 }
 
+#title-violet {
+    color: #9792e4;
+}
 
+.circle {
+    height: 150px;
+    margin-bottom: 25px;
+}
+
+.circle img {
+    object-fit: cover;
+    width: 150px;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.description p, .description span {
+    color: #fff;
+}
+
+    /* versione tablet */
+    @media screen and (min-width:768px) {
+        .testimonial {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .description {
+            width: 70%;
+            text-align: left;
+            align-self: center;
+        }
+    }
 
 /* BENEFICT SECTION */
-h2 {
-    margin-bottom: 30px;
-    text-align: center;
+h1 {
+    font-size: 4rem;
+}
+
+h1, .row h3 {
+    color: #9792e4;
+}
+
+.row p {
+    margin-bottom: 20px;
 }
 
     /* versione tablet */
@@ -295,7 +334,7 @@ h2 {
             gap: 0 20px;
         }
 
-        #benefitsec .card {
+        #benefitsec .text {
             width: calc(50% - 10px);
         }
     }
@@ -306,7 +345,7 @@ h2 {
             justify-content:space-between ;
         }
 
-        #benefitsec .card {
+        #benefitsec .text {
             width: calc((100% / 3) - 15px);
         }
     }
@@ -432,10 +471,6 @@ footer p {
 /*  DEBUG */
 
 .card {
-    min-height: 250px;
-}
-
-.testimonial {
-    min-height: 100px;
+    border: #000 1px solid;
 }
 

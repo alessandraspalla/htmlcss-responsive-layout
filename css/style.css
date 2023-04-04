@@ -23,6 +23,7 @@ img {
 .container {
     width: 85%;
     margin: 0 auto;
+    max-width: 700px;
 }
 
 
@@ -507,6 +508,7 @@ footer .underline {
 @media screen and (min-width:1024px) {
     .container {
         width: 70%;
+        max-width: 1200px;
     }
 
     h2 {
@@ -520,5 +522,4 @@ footer .underline {
     p {
         font-size: 0.75rem;
     }
-
 }
